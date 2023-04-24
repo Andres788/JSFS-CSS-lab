@@ -1,0 +1,91 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #bdbaba;
+  color: #333;
+}
+
+/*primero en el móvil (mobile first)*/
+
+nav {
+  padding: 1em;
+  font-family: Verdana, Geneva, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #333;
+}
+
+nav li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+nav li a:hover {
+  background: tomato;
+  color: white;
+}
+
+/* @media-query */
+
+@media screen and (min-width: 480px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+img {
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 60%;
+}
+h2 {
+  text-align: center;
+  margin: 15px;
+  padding: 15px;
+}
+.info {
+  text-align: center;
+  margin: 5px 5px;
+}
+.education,
+.experience,
+.head {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(242, 242, 242);
+  color: #161515;
+}
+.info {
+  border-bottom: 1px solid rgb(242, 242, 242);
+  text-align: justify;
+}
+#exp {
+  margin: auto;
+}
+#edu {
+  margin-left: 135px;
+  margin-right: 100px;
+}
+#data {
+  margin-left: 135px;
+  margin-right: 150px;
+}
